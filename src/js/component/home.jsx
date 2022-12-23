@@ -13,9 +13,10 @@ const Home = () => {
 	const setInputValueFunction = (arg) => {setInputValue(arg)};
 	const setToDosFunction = (arg) => {setToDos([...toDos, arg])};
 	
-	// const removeTask = (list, itemToRemove) => {
-	// 	let result = list.filter(task => task !== itemToRemove);
-	// };
+	const removeTask = (taskToRemove) => {
+		const filteredList = toDos.filter(task => task !== taskToRemove)
+		setToDos(filteredList)
+	}
 
 	return (
 			<div className="container">
@@ -26,9 +27,10 @@ const Home = () => {
 					toDos = {toDos}
 					/>
 				<ul>
+				
 					{toDos.map((task, index) => {
 						return(
-							<Task key={index} task={task} /> 
+							<Task key={index} task={task} remove={removeTask}/> 
 						)
 					})}
 						

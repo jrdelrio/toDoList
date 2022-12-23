@@ -2,7 +2,7 @@ import React from "react";
 
 const Input = (props) => {
     return (
-        <li key = '0' ><input type="text"
+        <input id='input-field' type="text"
 					onChange={(ev) => {props.setVar(ev.target.value)}}
 					value={props.value}
 
@@ -13,7 +13,6 @@ const Input = (props) => {
 						}}}
 
 					placeholder="What do you need to do?"></input>
-        </li>
     )
 };
 
