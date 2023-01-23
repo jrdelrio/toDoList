@@ -50,3 +50,7 @@ i {
 .total-tasks {
     text-align: left;
 }
+
+.displayedTask:not(:hover) .fa-trash-can {
+    display: none
+ }

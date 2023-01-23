@@ -17,20 +17,3 @@ const Input = (props) => {
 };
 
 export default Input;
-
-
-
-
-
-
-
-
-{/* <li id= 'input-field' key="input-field"><input type="text"
-					onChange={(ev) => {setInputValue(ev.target.value)}}
-					value={inputValue}
-					onKeyDown={(ev) => {
-						if (ev.key === "Enter") {
-							setToDos([...toDos, inputValue]);
-							setInputValue('')
-						}}}
-					placeholder="What do you need to do?"></input></li> */}

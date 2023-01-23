@@ -9,7 +9,6 @@ const Home = () => {
 	const [ inputValue, setInputValue ] = useState('');
 	const [ toDos, setToDos ] = useState([]);
 
-
 	const setInputValueFunction = (arg) => {setInputValue(arg)};
 	const setToDosFunction = (arg) => {setToDos([...toDos, arg])};
 	
